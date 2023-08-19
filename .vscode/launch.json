@@ -1,0 +1,217 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "prefixToInfixPostfix",
+            "request": "launch",
+            "mainClass": "extrass.prefixToInfixPostfix",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "postfixToInfixPrefix",
+            "request": "launch",
+            "mainClass": "extrass.postfixToInfixPrefix",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "infixToPostfixPrefix",
+            "request": "launch",
+            "mainClass": "extrass.infixToPostfixPrefix",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "rotatedSortedArray",
+            "request": "launch",
+            "mainClass": "extrass.rotatedSortedArray",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "firstNonRepeating",
+            "request": "launch",
+            "mainClass": "extrass.firstNonRepeating",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "nextGreater",
+            "request": "launch",
+            "mainClass": "extrass.nextGreater",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "stack_prac",
+            "request": "launch",
+            "mainClass": "stack_prac",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "container",
+            "request": "launch",
+            "mainClass": "extrass.container",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "SortingBasic",
+            "request": "launch",
+            "mainClass": "SortingBasic",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "backtracking1",
+            "request": "launch",
+            "mainClass": "backtracking1",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "backtracking2",
+            "request": "launch",
+            "mainClass": "backtracking2",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "binaryTrees1",
+            "request": "launch",
+            "mainClass": "binaryTrees1",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "binaryTrees2",
+            "request": "launch",
+            "mainClass": "binaryTrees2",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "binaryTrees3",
+            "request": "launch",
+            "mainClass": "binaryTrees3",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "bst1",
+            "request": "launch",
+            "mainClass": "bst1",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "likedListCircular",
+            "request": "launch",
+            "mainClass": "likedListCircular",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "linkedList",
+            "request": "launch",
+            "mainClass": "linkedList",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "linkedListDoubly",
+            "request": "launch",
+            "mainClass": "linkedListDoubly",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "mergesort",
+            "request": "launch",
+            "mainClass": "mergesort",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "prac",
+            "request": "launch",
+            "mainClass": "prac",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "queue1",
+            "request": "launch",
+            "mainClass": "queue1",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "queueCircular",
+            "request": "launch",
+            "mainClass": "queueCircular",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "queueLinkedl",
+            "request": "launch",
+            "mainClass": "queueLinkedl",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "queueStack",
+            "request": "launch",
+            "mainClass": "queueStack",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "quickSort",
+            "request": "launch",
+            "mainClass": "quickSort",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "sorting",
+            "request": "launch",
+            "mainClass": "sorting",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "stack1",
+            "request": "launch",
+            "mainClass": "stack1",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "stack2",
+            "request": "launch",
+            "mainClass": "stack2",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "stackqueue",
+            "request": "launch",
+            "mainClass": "stackqueue",
+            "projectName": "ds_3e77049"
+        }
+    ]
+}
