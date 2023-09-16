@@ -38,7 +38,7 @@ public class binaryTrees2 {
         // return count;
     }
 
-    //diameter is longest distance between nodes
+    //diameter is longest distance between two endnodes
     public static int diameter(Node root){ //O(N^2)
         if(root==null){
             return 0;

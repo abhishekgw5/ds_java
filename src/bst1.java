@@ -142,6 +142,20 @@ public class bst1 {
         return isValid(root.left, min, root) && isValid(root.right, root, max);
 
     }
+
+    //mirror bst
+    public static Node createMirror(Node root){
+        if(root==null){
+            return null;
+        }
+
+        Node leftMirror = createMirror(root.left);
+        Node rightMirror = createMirror(root.right);
+
+        root.left=rightMirror;
+        root.right=leftMirror;
+        return root;
+    }
     
     public static void main(String[] args) {
         int values[] = {8,5,3,1,4,6,10,11,14};

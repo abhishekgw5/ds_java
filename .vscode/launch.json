@@ -6,6 +6,83 @@
     "configurations": [
         {
             "type": "java",
+            "name": "graphs3",
+            "request": "launch",
+            "mainClass": "graphs3",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "graphs2",
+            "request": "launch",
+            "mainClass": "graphs2",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "mergesort",
+            "request": "launch",
+            "mainClass": "sortingAndsearching.mergesort",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "heapSort",
+            "request": "launch",
+            "mainClass": "sortingAndsearching.heapSort",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "graphs1",
+            "request": "launch",
+            "mainClass": "graphs1",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "tries1",
+            "request": "launch",
+            "mainClass": "tries1",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "heapSort",
+            "request": "launch",
+            "mainClass": "heapSort",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "heap1",
+            "request": "launch",
+            "mainClass": "heap1",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "priorityQueue",
+            "request": "launch",
+            "mainClass": "priorityQueue",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "bst2",
+            "request": "launch",
+            "mainClass": "bst2",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "btFromInorderPreorder",
+            "request": "launch",
+            "mainClass": "extrass.btFromInorderPreorder",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
             "name": "prefixToInfixPostfix",
             "request": "launch",
             "mainClass": "extrass.prefixToInfixPostfix",

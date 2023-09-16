@@ -1,3 +1,4 @@
+package sortingAndsearching;
 import java.util.Arrays;
 
 public class mergesort {
@@ -12,7 +13,6 @@ public class mergesort {
         int[] left = merge_sort(Arrays.copyOfRange(arr,0,mid));
         int[] right = merge_sort(Arrays.copyOfRange(arr,mid,arr.length));
         return merge(left,right);
-        
     }
 
     public static int[] merge(int[] arr1, int[] arr2){

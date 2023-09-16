@@ -1,3 +1,4 @@
+package sortingAndsearching;
 public class SortingBasic {
 
     public static void swap(int arr[], int a, int b) {

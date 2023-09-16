@@ -46,16 +46,15 @@ public record binaryTrees3() {
                 }
 
                 if (nodeInfo.node.left != null) {
-                    q.add(new Info(nodeInfo.node.left, nodeInfo.hd - 1));
-                    min = Math.min(min, nodeInfo.hd - 1);
+                    q.add(new Info(nodeInfo.node.left, nodeInfo.hd - 1)); //hd will be reduced by 1
+                    min = Math.min(min, nodeInfo.hd - 1); //will be used later for printing topview
                 }
 
                 if (nodeInfo.node.right != null) {
-                    q.add(new Info(nodeInfo.node.right, nodeInfo.hd + 1));
+                    q.add(new Info(nodeInfo.node.right, nodeInfo.hd + 1)); //hd will be increased by 1
                     max = Math.max(max, nodeInfo.hd + 1);
                 }
             }
-
         }
         
         for (int i = min; i <= max; i++) {
@@ -64,7 +63,10 @@ public record binaryTrees3() {
         System.out.println();
     }
 
-    //lowest common ancestor
+    
+
+    //lowest common ancestor for given two nodes of tree
+    //helper function of lca
     public static boolean getPath(Node root, int n, ArrayList<Node> path){
         if(root==null){
             return false;
@@ -72,7 +74,7 @@ public record binaryTrees3() {
         path.add(root);
 
         if(root.data==n){
-            return true;
+            return true; 
         }
         boolean foundLeft = getPath(root.left, n, path);
         boolean foundRight = getPath(root.right, n, path);
