@@ -31,18 +31,10 @@ public class graphs2 {
         graph[4].add(new Edge(4, 5, 5));
     }
 
-    static void createGraph2(ArrayList<Edge> graph){
-        graph.add(new Edge(0, 1, 2));
-        graph.add(new Edge(0, 2, 4));
-        graph.add(new Edge(1, 2, -4));
-        graph.add(new Edge(2, 3, 2));
-        graph.add(new Edge(3, 4, 4));
-        graph.add(new Edge(4, 1, -1));
-    }
-
+    //Shortest Paths from Source to all Vertices using Dijkstra’s Algorithm
     static class Pair implements Comparable<Pair>{
-        int n;
-        int path;
+        int n; //vertex
+        int path; //cost associated with n
 
         public Pair(int n,int path){
             this.n=n;
@@ -97,9 +89,18 @@ public class graphs2 {
     //dijkstra algo does not work well for -ve weighted graph
     //in that case Bellman Ford Algorithm is used
     //Also Bellman Ford algo does not work for -ve weight cycles
+    static void createGraph2(ArrayList<Edge> graph){
+        graph.add(new Edge(0, 1, 2));
+        graph.add(new Edge(0, 2, 4));
+        graph.add(new Edge(1, 2, -4));
+        graph.add(new Edge(2, 3, 2));
+        graph.add(new Edge(3, 4, 4));
+        graph.add(new Edge(4, 1, -1));
+    }
+    
     public static void bellmanFord(ArrayList<Edge> graph, int src, int V){
         int dist[] = new int[V];
-        for(int i=0;i<dist.length;i++){
+        for(int i=0;i<V;i++){
             if(i!=src){
                 dist[i]=Integer.MAX_VALUE;
             }
@@ -126,16 +127,16 @@ public class graphs2 {
     } 
 
     public static void main(String[] args) {
-        // int V=6;
-        // ArrayList<Edge> graph[] = new ArrayList[V];
-        // createGraph(graph);
-        // int src=0;
-        // dijkstra(graph, src);
+        int V=6;
+        ArrayList<Edge> graph[] = new ArrayList[V];
+        createGraph(graph);
+        int src=0;
+        dijkstra(graph, src);
         
-        int V=5;
-        ArrayList<Edge> graph = new ArrayList<>();
-        createGraph2(graph);
-        bellmanFord(graph, 0, V);
+        // int V=5;
+        // ArrayList<Edge> graph = new ArrayList<>();
+        // createGraph2(graph);
+        // bellmanFord(graph, 0, V);
         
     }
 }

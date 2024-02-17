@@ -46,7 +46,7 @@ public class graphs3 {
         }
     }
 
-    //use for minimum spanning tree
+    //Prims algo use for calculating cost of minimum spanning tree
     //MST is subset of the edges connected with minimum possible edge weight
     //Prims Algo is use for finding MST
     public static void prims(ArrayList<Edge> graph[]){
@@ -78,3 +78,4 @@ public class graphs3 {
         prims(graph);
     }
 }
+

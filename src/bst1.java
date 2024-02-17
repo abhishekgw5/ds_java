@@ -52,9 +52,11 @@ public class bst1 {
         }
     }
 
+    //delete
+    //helper fun
     //inOrderSuccessor of root is leftmost node of right subtree
     public static Node inOrderSuccessor(Node root){
-        while(root.right!=null){
+        while(root.left!=null){
             root = root.left;
         }
         return root;
@@ -123,7 +125,7 @@ public class bst1 {
 
         printRootToLeaf(root.left, path);
         printRootToLeaf(root.right, path);
-        path.remove(path.size()-1);
+        path.remove(path.size()-1); ///imp
     }
 
     //validate bst

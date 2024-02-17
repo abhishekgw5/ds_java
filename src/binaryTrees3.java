@@ -15,7 +15,8 @@ public record binaryTrees3() {
             this.right = null;
         }
     }
-
+    
+    //topview
     static class Info {
         Node node;
         int hd; //horizontal distance
@@ -57,14 +58,13 @@ public record binaryTrees3() {
             }
         }
         
-        for (int i = min; i <= max; i++) {
+        for (int i = min; i <= max; i++) { //printing topview
             System.out.print(map.get(i).data + " ");
         }
         System.out.println();
     }
 
     
-
     //lowest common ancestor for given two nodes of tree
     //helper function of lca
     public static boolean getPath(Node root, int n, ArrayList<Node> path){
@@ -128,7 +128,8 @@ public record binaryTrees3() {
         return root;
     }
 
-    //distance between two nodes
+    //minimum distance between nodes
+    //helper fun
     public static int lcaDist(Node root, int n1){
         if(root==null){
             return -1;
@@ -150,7 +151,6 @@ public record binaryTrees3() {
 
     }
 
-    //minimum distance between nodes
     public static int minDist(Node root, int n1,int n2){
         Node lca = lca2(root, n1, n2);
 

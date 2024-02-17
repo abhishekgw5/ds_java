@@ -37,6 +37,7 @@ public class sorting {
 
     public static void insertionSort(int arr[], int start, int end) {
         //initially start=end=0
+        //arr[end+1] will be pivot which we have to put at right place
         if (end == arr.length) {
             return;
         }
@@ -48,10 +49,10 @@ public class sorting {
                 }
                 arr[start] = temp1;
             } else {
-                insertionSort(arr, start - 1, end);
+                insertionSort(arr, start - 1, end); // checking in sorted array
             }
         } else {
-            insertionSort(arr, end + 1, end + 1);
+            insertionSort(arr, end + 1, end + 1); //move ahead
         }
     }
 

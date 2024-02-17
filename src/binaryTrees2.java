@@ -77,6 +77,7 @@ public class binaryTrees2 {
     }
 
     //subtree checking
+    //helper function
     public static boolean isIdentical(Node root, Node subroot){
         if(root==null && subroot==null){
             return true;
@@ -98,7 +99,6 @@ public class binaryTrees2 {
     }
 
     public static boolean isSubTree(Node root, Node  subroot){
-        
         if(root==null){
             return false;
         }

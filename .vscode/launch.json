@@ -6,6 +6,83 @@
     "configurations": [
         {
             "type": "java",
+            "name": "catalan",
+            "request": "launch",
+            "mainClass": "dp.catalan",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "wildcardMatching",
+            "request": "launch",
+            "mainClass": "dp.wildcardMatching",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "stringConversion",
+            "request": "launch",
+            "mainClass": "dp.stringConversion",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "largestCommon",
+            "request": "launch",
+            "mainClass": "dp.largestCommon",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "largestSubseq",
+            "request": "launch",
+            "mainClass": "dp.largestSubseq",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "rodCutting",
+            "request": "launch",
+            "mainClass": "dp.rodCutting",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "prac2",
+            "request": "launch",
+            "mainClass": "prac2",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "knapsack",
+            "request": "launch",
+            "mainClass": "dp.knapsack",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "fibonacci",
+            "request": "launch",
+            "mainClass": "dp.fibonacci",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "sorting1",
+            "request": "launch",
+            "mainClass": "sortingAndsearching.sorting1",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
+            "name": "graphs4",
+            "request": "launch",
+            "mainClass": "graphs4",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
             "name": "graphs3",
             "request": "launch",
             "mainClass": "graphs3",

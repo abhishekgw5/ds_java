@@ -126,6 +126,8 @@ public class binaryTrees1 {
 
     public static void main(String[] args) {
         //int nodes[] = { 1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1 };
+        //Node root = tree.buildTree(nodes);
+        
         Node root = new Node(1);
         root.left = new Node(2);
         root.right=new Node(3);
@@ -133,7 +135,7 @@ public class binaryTrees1 {
         root.left.right=new Node(5);
         root.right.right=new Node(6);
         BinaryTree tree = new BinaryTree();
-        //Node root = tree.buildTree(nodes);
+        
         // System.out.println(root.data);
         // tree.preOrder(root);
         // System.out.println();

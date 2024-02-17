@@ -73,7 +73,7 @@ public class graphs1 {
     public static void bfs(ArrayList<Edge>[] graph){
         Queue<Integer> q = new LinkedList<>();
         boolean vis[] = new boolean[graph.length];
-        q.add(0);
+        q.add(0); //index
         
         while(!q.isEmpty()){
             int curr = q.remove();
@@ -124,9 +124,9 @@ public class graphs1 {
         for(int i=0;i<graph[curr].size();i++){
             Edge e = graph[curr].get(i);
             if(!vis[e.destination]){
-                vis[curr]=true;
+                vis[e.destination]=true;
                 printAllPath(graph, vis, e.destination, path+e.destination, tar);
-                vis[curr]=false;
+                vis[e.destination]=false;
             }
         }
     }
@@ -144,7 +144,7 @@ public class graphs1 {
 
     public static boolean isCycleDirected(ArrayList<Edge> graph[], boolean vis[], int curr, boolean rec[]){
         vis[curr]=true;
-        rec[curr]=true;
+        rec[curr]=true; //current recursion stack
 
         for(int i=0;i<graph[curr].size();i++){
             Edge e = graph[curr].get(i);
@@ -162,35 +162,10 @@ public class graphs1 {
         return false;
     }
 
-    public static void topSortDFSUtil(ArrayList<Edge> graph[],int curr, boolean vis[],Stack<Integer> stack){
-        vis[curr]=true;
-
-        for(int i=0;i<graph[curr].size();i++){
-            Edge e = graph[curr].get(i);
-
-            if(!vis[e.destination]){
-                topSortDFSUtil(graph, e.destination, vis, stack);
-            }
-        }
-
-        stack.push(curr); //additional in dfs
-    }
-
-    public static void topSortDFS(ArrayList<Edge> graph[], int V){
-        boolean vis[] = new boolean[V];
-        Stack<Integer> stack = new Stack<>();
-
-        for(int i=0;i<V;i++){
-            if(!vis[i]){
-                topSortDFSUtil(graph, i, vis, stack);
-            }
-        }
-
-        while(!stack.isEmpty()){
-            System.out.print(stack.pop() + " ");
-        }
-    }
-
+    
+    //Topological sorting for Directed Acyclic Graph (DAG) is a linear ordering of vertices 
+    //such that for every directed edge u-v, vertex u comes before v in the ordering.
+    //topological sort using bfs
     public static void calcIndegree(ArrayList<Edge> graph[], int indegree[]){
         for(int i=0;i<graph.length;i++){
             for(int j=0;j<graph[i].size();j++){
@@ -227,6 +202,38 @@ public class graphs1 {
         System.out.println();
     }
 
+
+    //topological sort using dfs
+       public static void topSortDFSUtil(ArrayList<Edge> graph[],int curr, boolean vis[],Stack<Integer> stack){
+        vis[curr]=true;
+
+        for(int i=0;i<graph[curr].size();i++){
+            Edge e = graph[curr].get(i);
+
+            if(!vis[e.destination]){
+                topSortDFSUtil(graph, e.destination, vis, stack);
+            }
+        }
+
+        stack.push(curr); //additional in dfs
+    }
+
+    public static void topSortDFS(ArrayList<Edge> graph[], int V){
+        boolean vis[] = new boolean[V];
+        Stack<Integer> stack = new Stack<>();
+
+        for(int i=0;i<V;i++){
+            if(!vis[i]){
+                topSortDFSUtil(graph, i, vis, stack);
+            }
+        }
+
+        while(!stack.isEmpty()){
+            System.out.print(stack.pop() + " ");
+        }
+    }
+
+    
     public static boolean isCycleUndirected(ArrayList<Edge> graph[],boolean vis[], int curr, int parent){
         vis[curr] = true;
 
@@ -246,9 +253,9 @@ public class graphs1 {
     }
     
     public static void main(String[] args) {
-        // int V=5;
-        // ArrayList<Edge>[] graph = new ArrayList[V];
-        // createUnDirectedGraph(graph);
+        int V=5;
+        ArrayList<Edge>[] graph = new ArrayList[V];
+        createUnDirectedGraph(graph);
         
 
         // for(int i=0; i<graph[2].size(); i++){
@@ -285,8 +292,8 @@ public class graphs1 {
         // printAllPath(graph, new boolean[V], 5, "5", 1);
         // printAllPathDirected(graph, 5, 1, "");
         
-        //createUnDirectedGraph(graph);
-        //System.out.println(isCycleUndirected(graph, new boolean[V], 0, -1));
+        createUnDirectedGraph(graph);
+        System.out.println(isCycleUndirected(graph, new boolean[V], 0, -1));
 
     }
 }

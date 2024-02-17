@@ -6,6 +6,7 @@ public class heapSort {
         int right = 2*i + 2;
         int maxIdx = i;
 
+        //check max among left right and i
         if(left<size && arr[left]>arr[maxIdx]){
             maxIdx = left;
         }
@@ -23,9 +24,9 @@ public class heapSort {
     }
 
     public static void heapSort(int arr[]){
-        //build max heap
+        //build max heap 
         int n = arr.length;
-        for(int i=n/2; i>=0; i--){
+        for(int i=n/2; i>=0; i--){ //traverse all non-leaf nodes
             heapify(arr,i,n);
         }
 
@@ -40,7 +41,7 @@ public class heapSort {
     }
 
     public static void main(String[] args) {
-        int arr[] = {1,2,4,5,3};
+        int arr[] = {11,1,7,2,12,4,5,3};
         heapSort(arr);
 
         for(int i=0;i<arr.length;i++){
