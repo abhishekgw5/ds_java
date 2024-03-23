@@ -122,7 +122,7 @@ public class binaryTrees2 {
 
         // System.out.println(height(root));
         // System.out.println(noOfNodes(root));
-        // System.out.println(diameter(root));
+        System.out.println(diameter(root));
 
         //System.out.println(diameter2(root).diam);
 
