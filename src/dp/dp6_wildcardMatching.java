@@ -5,7 +5,7 @@ package dp;
 //‘?’ – matches any single character 
 //‘*’ – Matches any sequence of characters (including the empty sequence)
 
-public class wildcardMatching {
+public class dp6_wildcardMatching {
     public static boolean isMatch(String s, String p){
         int n = s.length();
         int m = p.length();

@@ -3,7 +3,7 @@ import java.util.*;
 
 // Cn = C0*Cn-1 + C1*Cn-2 + C2*Cn-3 + .... + Cn-1*C0
 
-public class catalan {
+public class dp7_catalan {
     public static int catalanRec(int n){
         if(n==0 || n==1){
             return 1;

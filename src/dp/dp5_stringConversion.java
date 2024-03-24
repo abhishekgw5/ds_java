@@ -1,7 +1,7 @@
 package dp;
 //return minimum operations to covert str1 to str2
 //these three operations cand be done add, delete, replace
-public class stringConversion {
+public class dp5_stringConversion {
     public static int convertString(String str1, String str2){
         int n = str1.length();
         int m = str2.length();

@@ -1,5 +1,5 @@
 package dp;
-public class knapsack {
+public class dp2_knapsack {
     public static int knapsackRecur(int val[], int wt[], int W, int n){
         if(W==0 || n==0){
             return 0;

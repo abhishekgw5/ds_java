@@ -1,7 +1,7 @@
 package dp;
 import java.util.*;
 
-public class fibonacci {
+public class dp1_fibonacci {
     public static int fibMemoization(int n,int fb[]){
         if(n==0 || n==1){
             return n;
