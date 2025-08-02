@@ -35,32 +35,28 @@ public class sorting {
         }
     }
 
-    public static void insertionSort(int arr[], int start, int end) {
-        //initially start=end=0
-        //arr[end+1] will be pivot which we have to put at right place
-        if (end == arr.length) {
+    public static void insertionSort(int arr[], int index){
+        if(index==arr.length){
             return;
         }
-        if (start >= 0) {
-            if (arr[end + 1] < arr[start]) {
-                int temp1 = arr[end + 1];
-                for (int i = start; i <= end; i++) {
-                    arr[i + 1] = arr[i];
-                }
-                arr[start] = temp1;
-            } else {
-                insertionSort(arr, start - 1, end); // checking in sorted array
-            }
-        } else {
-            insertionSort(arr, end + 1, end + 1); //move ahead
+        int temp = arr[index];
+        int j = index-1;
+        
+        while(j>=0 && temp<arr[j]){
+            //Checking and adding element in already sorted array.
+            arr[j+1]=arr[j];
+            j--;
         }
+        arr[j+1]=temp;
+
+        insertionSort(arr, index+1);
     }
 
     public static void main(String[] args) {
         int arr[] = { 3, 1, 4, 6, 5, 2 };
         // bubbleSort(arr, 0,arr.length-1);
         // selectionSort(arr, 0, arr.length, 0);
-        insertionSort(arr, 0, 0);
+        insertionSort(arr, 0);
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }

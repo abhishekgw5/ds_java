@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "sorting",
+            "request": "launch",
+            "mainClass": "sortingAndsearching.sorting",
+            "projectName": "ds_3e77049"
+        },
+        {
+            "type": "java",
             "name": "catalan",
             "request": "launch",
             "mainClass": "dp.catalan",
