@@ -3,7 +3,7 @@ package dp;
 import java.util.Arrays;
 import java.util.HashSet;
 
-public class largestCommon {
+public class dp4_largestCommon {
     //largest common subsequence
     public static int lcsRec(String str1, String str2, int n, int m){
         if(n==0 || m==0){

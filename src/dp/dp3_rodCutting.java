@@ -2,7 +2,7 @@ package dp;
 
 import java.util.Arrays;
 
-public class rodCutting {
+public class dp3_rodCutting {
     public static int rodMemo(int lengths[], int prices[], int flength, int n, int[][] dp){
         if(flength==0 || n==0){
             return 0;

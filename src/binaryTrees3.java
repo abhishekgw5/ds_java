@@ -28,7 +28,7 @@ public record binaryTrees3() {
     }
 
     public static void topView(Node root) {
-        HashMap<Integer, Node> map = new HashMap<>();
+        HashMap<Integer, Node> map = new HashMap<>(); //storing unique nodes for each hd
         Queue<Info> q = new LinkedList<>();
         q.add(new Info(root, 0));
         q.add(null);
